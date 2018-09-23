@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 class CV(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
